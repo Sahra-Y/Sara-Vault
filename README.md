@@ -57,4 +57,4 @@ npm run dist
 
 ## Not
 
-Obfuscate sonrası dev FXServer’da test et. `config.lua`, `fxmanifest.lua` genelde shield etme.
+Obfuscate sonrası dev FXServer’da test et. `config.lua`, `fxmanifest.lua` shield etme.
