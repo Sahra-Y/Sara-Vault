@@ -1,0 +1,32 @@
+SARA VAULT — FiveM Lua + NUI JS şifreleme
+================================
+
+PROGRAMI AÇ
+-----------
+  Sara Vault.exe  →  çift tık (tek dosya, kurulum yok)
+
+
+GÜNCELLEME
+-------------------------------------
+1. Sara Vault kapalı olsun
+2. Yeni Sara Vault.exe dosyasını eskisinin üzerine yapıştır (üzerine yaz)
+3. Tekrar çift tıkla — bitti
+
+Eski kurulum yaptıysan (isteğe bağlı):
+  Ayarlar → Uygulamalar → Sara Vault → Kaldır (bir kez)
+  Sonra sadece bu klasördeki Sara Vault.exe kullan
+
+
+KULLANIM
+--------
+1. FiveM resource klasörünü seç
+2. .lua ve html/ui altındaki .js dosyalarını işaretle (NUI otomatik seçilir)
+3. SHIELD → çıktı: resource içinde "Output" klasörü
+
+Not: .min.js, node_modules, webpack.config.js atlanır. HTML/CSS kopyalanır (değişmez).
+
+
+Geliştirici — yeni exe üret:
+  1) Sara Vault TAMAMEN kapalı (Görev Yöneticisi → Sara Vault.exe yok)
+  2) npm run dist
+  → köke "Sara Vault.exe" yazılır (Sara Vault.new.exe kullanılmaz)

@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+@import '@fontsource/orbitron/600.css';
+@import '@fontsource/orbitron/700.css';
+@import '@fontsource/outfit/400.css';
+@import '@fontsource/outfit/500.css';
+@import '@fontsource/outfit/600.css';
+@import '@fontsource/outfit/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@theme {
+  --color-vault-bg: #04060d;
+  --color-vault-panel: rgba(10, 16, 32, 0.72);
+  --color-vault-border: rgba(34, 211, 238, 0.22);
+  --color-vault-neon: #22d3ee;
+  --color-vault-pink: #f472b6;
+  --color-vault-gold: #fbbf24;
+  --color-vault-text: #f1f5f9;
+  --color-vault-text-soft: #cbd5e1;
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(ellipse 90% 60% at 10% -10%, rgba(244, 114, 182, 0.12), transparent 50%),
+    radial-gradient(ellipse 80% 50% at 90% 0%, rgba(34, 211, 238, 0.14), transparent 45%),
+    radial-gradient(ellipse 120% 80% at 50% -20%, #0f172a 0%, #04060d 58%);
+  color: var(--color-vault-text);
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+.font-mono-vault {
+  font-family: var(--font-mono);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(105deg, #f9a8d4 0%, #e879f9 35%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.label-caps {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-vault-neon);
+}
+
+.glass-panel {
+  background: var(--color-vault-panel);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--color-vault-border);
+  border-radius: 14px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.btn-ghost {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(244, 114, 182, 0.5), rgba(34, 211, 238, 0.5));
+  border-radius: 4px;
+}
