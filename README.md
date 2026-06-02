@@ -42,8 +42,8 @@ Sara Vault/
 ## Kullanım
 
 1. **Sara Vault.exe** — çift tık
-2. Üst kutu: **resource klasörü** sürükle veya tıkla
-3. Alt buton: sadece **.lua / .js** (tek / çoklu)
+2. **Script resource klasörü** sürükle veya tıkla
+3.  sadece **.lua / .js** (tek / çoklu)
 4. **SHIELD** → `Output` klasörünü sunucuda kullan
 
 ## Geliştirici
